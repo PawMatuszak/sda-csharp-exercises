@@ -4,6 +4,17 @@ namespace sda_csharp_exercises
 {
     class Program
     {
+        static public int Power(int n, int power)
+        {
+            int sum = n;
+            for (int i = 1; i <= power; i++)
+            {
+                sum = sum * n;
+            }
+
+            return sum;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Jakiej liczby chcesz poznać potęgę Poszukiwaczu wiedzy");
@@ -19,12 +30,7 @@ namespace sda_csharp_exercises
             }
             else
             {
-                for (int i = 1; i <= power; i++)
-                {
-                    sum = master * master;
-
-                }
-                Console.WriteLine($"Twoja odpowiedz to {sum}.");
+                Console.WriteLine($" Twoja odpowiedź to: {Power(master, power)}");
             }
             
         }
