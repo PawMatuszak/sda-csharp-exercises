@@ -6,13 +6,13 @@ namespace sda_csharp_exercises
     {
         static public int Power(int n, int power)
         {
-            int sum = n;
-            for (int i = 1; i <= power; i++)
+            int result = n;
+            for (int i = 1; i < power; i++)
             {
-                sum = sum * n;
+                result = result * n;
             }
 
-            return sum;
+            return result;
         }
 
         static void Main(string[] args)
@@ -21,7 +21,7 @@ namespace sda_csharp_exercises
             int master = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"i do której potęgi chcesz podnieść {master} ?");
             int power = Convert.ToInt32(Console.ReadLine());
-            int sum = 0;
+            
 
 
             if (power < 0)
