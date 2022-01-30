@@ -6,7 +6,12 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-           
+            static void Main(string[] args)
+            {
+                Rectangle prostokąt1 = new Rectangle(2, 3);
+                prostokąt1.Show();
+                Rectangle.PrintClassName();
+
+            }
         }
     }
-}
